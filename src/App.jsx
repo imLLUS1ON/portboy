@@ -1,5 +1,6 @@
 import React from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -22,6 +23,7 @@ function App() {
         <p>© {new Date().getFullYear()} Priyanshu Negi. All rights reserved.</p>
       </footer>
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
