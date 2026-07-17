@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -20,6 +21,7 @@ function App() {
       <footer style={{ textAlign: 'center', padding: '2rem', borderTop: '1px solid var(--glass-border)', color: 'var(--text-secondary)' }}>
         <p>© {new Date().getFullYear()} Priyanshu Negi. All rights reserved.</p>
       </footer>
+      <Analytics />
     </div>
   );
 }
